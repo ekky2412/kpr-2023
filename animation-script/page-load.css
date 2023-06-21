@@ -1,0 +1,26 @@
+@keyframes slideInTop{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+
+}
+
+@keyframes fadeInOut{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+div.navbar{
+    animation: 0.5s ease-out 0s 1 slideInTop;
+}
+
+div.img-box{
+    animation: 0.5s ease-out 0s 1 fadeInOut;
+}
