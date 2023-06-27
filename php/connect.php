@@ -14,7 +14,7 @@
 
     $nama = sanitizeInput($_POST['nama']);
     $nim = sanitizeInput($_POST['nim']);
-    $sql = "SELECT * FROM ak WHERE nama = '$nama' AND nim = '$nim' ";
+    $sql = "SELECT * FROM alluser WHERE nama = '$nama' AND nim = '$nim' ";
     $result = $conn->query($sql);
 
     if (mysqli_num_rows($result) > 0){
