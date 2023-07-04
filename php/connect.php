@@ -6,19 +6,22 @@
     }
 
     function sanitizeInput($data){
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
+        $data = trim((string) $data);
+        $data = stripslashes((string) $data);
+        $data = htmlspecialchars((string) $data);
         return $data;
     }
 
     $nama = sanitizeInput($_POST['nama']);
     $nim = sanitizeInput($_POST['nim']);
-    $sql = "SELECT * FROM alluser WHERE nama = '$nama' AND nim = '$nim' ";
+    $j = "SELECT jurusan FROM user.all";
+    $sql = "SELECT * FROM user.all WHERE nama = '$nama' AND nim = '$nim'";
     $result = $conn->query($sql);
 
     if (mysqli_num_rows($result) > 0){
-        header('Location: ../menu.html');
+        if($j == "TI"){
+            echo "TI";
+        }
     } else {
         echo "Login gagal";
     }
