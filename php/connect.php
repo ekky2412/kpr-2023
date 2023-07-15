@@ -1,6 +1,6 @@
 <?php
     //Database connection
-    $conn = new mysqli('localhost', 'root', 'restuandramysql012321==','user');
+    $conn = new mysqli('localhost', 'root', 'password','user');
     if($conn->connect_error){
         die('Connection failed : '.$conn->connect_error);
     }
