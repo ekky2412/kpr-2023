@@ -4,17 +4,30 @@
     if($conn->connect_error){
         die('Connection failed : '.$conn->connect_error);
     }
-
+    //Sanitize input
     function sanitizeInput($data){
         $data = trim((string) $data);
         $data = stripslashes((string) $data);
         $data = htmlspecialchars((string) $data);
         return $data;
     }
+    
+    //Generate password 
+    function generateRandomPassword($length = 4){
+        $characters = '0123456789';
+        $password = '';
+        $characterCount = strlen($characters) -1;
 
-    $nama = sanitizeInput($_POST['nama']);
+        for ($i = 0; $i < $length; $i++){
+            $password .= $characters[rand(0, $characterCount)]; 
+        }
+
+        return $password;
+    }
+
     $nim = sanitizeInput($_POST['nim']);
-    $sql = "SELECT * FROM user.all WHERE nama = '$nama' AND nim = '$nim'";
+    $password = sanitizeInput($_POST['pass']);
+    $sql = "SELECT * FROM user.all WHERE nim = '$nim'";
     $result = $conn->query($sql);
     $row = $result -> fetch_assoc();
 
@@ -36,6 +49,13 @@
             }
         } else if ($row['STATUS'] == "NON AKTIF"){
             echo "Mahasiswa Tidak Aktif";
+        } else {
+            $randomPassword = generateRandomPassword();
+
+            $insertSql = "INSERT INTO user.all (pass) VALUES ('$randomPassword')";
+            if ($conn->query($insertSql) === TRUE){
+                echo "Generated password: $randomPassword";
+            }
         }
     }
 
