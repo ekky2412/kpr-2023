@@ -97,15 +97,3 @@ div#logo {
   left: 50%;
   transform: translateX(-50%);
 }
-
-.btn-pass{
-  position: relative;
-  display: inline-block;
-}
-
-.btn-pass:hover{
-  background: #a13122b4;
-  color: #fff;
-  border-radius: 5px;
-}
-
