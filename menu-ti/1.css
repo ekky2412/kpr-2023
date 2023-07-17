@@ -25,17 +25,15 @@ body {
 div.img-box {
     position:absolute;
     left: 365px;
-    top: -30px;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(221, 194, 135, 0.502);
     box-sizing: content-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin-bottom: 100px;
 }
 
@@ -90,7 +88,7 @@ div.navbar ul {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  background-color: #11468F;
+  background-color: #f3910b;
 }
 
 div.navbar p{
@@ -121,7 +119,7 @@ div.text-box p{
 
 div.text-mainbox{
   display:flex;
-  margin-left: 30px;
+  margin-left: 80px;
   flex-direction: column;
   width: 500px;
   height: 100%;
