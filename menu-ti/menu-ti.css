@@ -1,0 +1,99 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    background-image: url('../img/menu-kiri-background.jpg');
+    background-size: cover;
+  }
+  
+  div.img-box {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      width: 200px;
+      height: 200px;
+      padding: 40px;
+      transform: translate(-50%, -50%);
+      background: rgba(221, 194, 135, 0.502);
+      box-sizing: content-box;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      display: block;
+  }
+  
+  div.img-box:nth-child(4) {
+      left: 50%;
+  }
+  
+  div.img-box:nth-child(3) {
+      left: 75%;
+  }
+  
+  div.img-box a {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: inline-block;
+      color: #000000;
+      font-size: 16px;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif; 
+  }
+  
+  div.img-box a:hover{
+      background: #a13122b4;
+      color: #fff;
+      border-radius: 5px;
+      padding: 4px;
+  }
+  
+  
+  div.back-button {
+    position: absolute;
+    bottom: 0%;
+    margin: 2rem;
+  }
+  
+  div.back-button a {
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 6px;
+    background: #ffffffb4;
+  }
+  
+  div.back-button a:hover {
+    background: #a13122b4;
+    color: #fff;
+    border-radius: 5px;
+    padding: 6px;
+  }
+  
+  div.navbar{
+      width: 100%;
+  }
+  
+  div.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    background-color: #be2e2e;
+  }
+  
+  div.navbar p{
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: auto; 
+      font-family: 'Kanit', sans-serif;
+      font-size: 50px;
+  }
