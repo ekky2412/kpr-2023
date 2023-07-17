@@ -25,17 +25,15 @@ body {
 div.img-box {
     position:absolute;
     left: 365px;
-    top: -30px;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(221, 194, 135, 0.502);
     box-sizing: content-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin-bottom: 100px;
 }
 
@@ -121,7 +119,7 @@ div.text-box p{
 
 div.text-mainbox{
   display:flex;
-  margin-left: 30px;
+  margin-left: 80px;
   flex-direction: column;
   width: 500px;
   height: 100%;
@@ -134,11 +132,11 @@ div.number-button{
   display: block;
   margin: 0 auto;
   top: 20%;
-  left: 43%;
+  left: 674px;
 }
 
 div.number-button a{
-  margin-left: 75px;
+  margin-left: 38px;
   padding: 5px 15px 5px 15px;
   width: 50px;
   height: 35px;
