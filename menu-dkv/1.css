@@ -26,8 +26,8 @@ div.img-box {
     position:absolute;
     left: 365px;
     top: -30px;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(221, 194, 135, 0.502);
@@ -133,7 +133,7 @@ div.number-button{
   position: absolute;
   display: block;
   margin: 0 auto;
-  top: 20%;
+  top: 17%;
   left: 40%;
 }
 
