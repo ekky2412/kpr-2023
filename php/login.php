@@ -20,15 +20,15 @@ $row = $result->fetch_assoc();
 if (mysqli_num_rows($result) > 0) {
     if ($row['STATUS'] == "AKTIF") {
         if ($row['JURUSAN'] == "TI") {
-            header('Location: ..\menu.html');
+            header('Location: ..\menu-ti\menu-ti.html');
         } else if ($row['JURUSAN'] == "DKV") {
-            header('Location: ..\menu-dkv.html');
+            header('Location: ..\menu-dkv\menu-dkv.html');
         } else if ($row['JURUSAN'] == "MJ") {
-            header('Location: ..\menu-mj.html');
+            header('Location: ..\menu-mj\menu-mj.html');
         } else if ($row['JURUSAN'] == "SK") {
-            header('Location: ..\menu-sk.html');
+            header('Location: ..\menu-sk\menu-sk.html');
         } else if ($row['JURUSAN'] == "AK") {
-            header('Location: ..\menu-ak.html');
+            header('Location: ..\menu-ak\menu-ak.html');
         } else {
             echo "Login gagal";
         }
