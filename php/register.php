@@ -2,6 +2,8 @@
 
 include "koneksi.php";
 
+
+
 function generatedPassword($length = 5)
 {
     $characters = '0123456789';
